@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Css</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="./images/model.png" type="image/x-icon">
+    <!-- tailwind css link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        ::selection {
+            background-color: rgba(0, 139, 139, 0.452);
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-[#FFFBF0]">
+        <div class="lg:w-[1000px] p-2 lg:p-0 lg:pb-10 m-auto">
+            <!-- navbar -->
+            <div class="navbar relative">
+                <div class="navbar-start">
+                    <img class="w-[250px]" src="icons/logo.png" alt="">
+                </div>
+                <div class="absolute lg:flex hidden lg:left-[40%] lg:-top-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="150" height="61" viewBox="0 0 150 61" fill="none">
+                        <circle cx="2.08346" cy="10.3054" r="2.08346" fill="#FFE2AA" />
+                        <circle cx="83.1018" cy="10.3054" r="2.08346" fill="#FFE2AA" />
+                        <circle cx="2.08346" cy="26.5092" r="2.08346" fill="#FFE2AA" />
+                        <circle cx="83.1018" cy="26.5092" r="2.08346" fill="#FFE2AA" />
+                        <circle cx="2.08346" cy="42.7129" r="2.08346" fill="#FFE2AA" />
+                        <circle cx="83.1018" cy="42.7129" r="2.08346" fill="#FFE2AA" />
+                        <circle cx="2.08346" cy="58.9165" r="2.08346" fill="#FFE2AA" />
+                        <circle cx="83.1018" cy="58.9165" r="2.08346" fill="#FFE2AA" />
+                        <circle cx="18.2871" cy="10.3054" r="2.08346" fill="#FFE2AA" />
+                        <circle cx="99.3055" cy="10.3054" r="2.08346" fill="#FFE2AA" />
+                        <circle cx="18.2871" cy="26.5092" r="2.08346" fill="#FFE2AA" />
+                        <circle cx="99.3055" cy="26.5092" r="2.08346" fill="#FFE2AA" />
+                        <circle cx="18.2871" cy="42.7129" r="2.08346" fill="#FFE2AA" />
+                        <circle cx="99.3055" cy="42.7129" r="2.08346" fill="#FFE2AA" />
+                        <circle cx="18.2871" cy="58.9165" r="2.08346" fill="#FFE2AA" />
+                        <circle cx="99.3055" cy="58.9165" r="2.08346" fill="#FFE2AA" />
+                        <circle cx="34.4908" cy="10.3054" r="2.08346" fill="#FFE2AA" />
+                        <circle cx="115.509" cy="10.3054" r="2.08346" fill="#FFE2AA" />
+                        <circle cx="34.4908" cy="26.5092" r="2.08346" fill="#FFE2AA" />
+                        <circle cx="115.509" cy="26.5092" r="2.08346" fill="#FFE2AA" />
+                        <circle cx="34.4908" cy="42.7129" r="2.08346" fill="#FFE2AA" />
+                        <circle cx="115.509" cy="42.7129" r="2.08346" fill="#FFE2AA" />
+                        <circle cx="34.4908" cy="58.9165" r="2.08346" fill="#FFE2AA" />
+                        <circle cx="115.509" cy="58.9165" r="2.08346" fill="#FFE2AA" />
+                        <circle cx="50.6945" cy="10.3054" r="2.08346" fill="#FFE2AA" />
+                        <circle cx="131.713" cy="10.3054" r="2.08346" fill="#FFE2AA" />
+                        <circle cx="50.6945" cy="26.5092" r="2.08346" fill="#FFE2AA" />
+                        <circle cx="131.713" cy="26.5092" r="2.08346" fill="#FFE2AA" />
+                        <circle cx="50.6945" cy="42.7129" r="2.08346" fill="#FFE2AA" />
+                        <circle cx="131.713" cy="42.7129" r="2.08346" fill="#FFE2AA" />
+                        <circle cx="50.6945" cy="58.9165" r="2.08346" fill="#FFE2AA" />
+                        <circle cx="131.713" cy="58.9165" r="2.08346" fill="#FFE2AA" />
+                        <circle cx="66.8981" cy="10.3054" r="2.08346" fill="#FFE2AA" />
+                        <circle cx="147.916" cy="10.3054" r="2.08346" fill="#FFE2AA" />
+                        <circle cx="66.8981" cy="26.5092" r="2.08346" fill="#FFE2AA" />
+                        <circle cx="147.916" cy="26.5092" r="2.08346" fill="#FFE2AA" />
+                        <circle cx="66.8981" cy="42.7129" r="2.08346" fill="#FFE2AA" />
+                        <circle cx="147.916" cy="42.7129" r="2.08346" fill="#FFE2AA" />
+                        <circle cx="66.8981" cy="58.9165" r="2.08346" fill="#FFE2AA" />
+                        <circle cx="147.916" cy="58.9165" r="2.08346" fill="#FFE2AA" />
+                    </svg>
+                </div>
+                <div class="navbar-end">
+                    <div class="dropdown dropdown-left">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-16 w-40 p-2 shadow">
+                            <li><a>Home</a></li>
+                            <li><a>Project</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                        <ul class="gap-10 font-semibold menu-horizontal px-1">
+                            <li><a>Home</a></li>
+                            <li><a>Project</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- banner section start here -->
+            <div class="flex flex-col md:flex-row lg:gap-44 items-center lg:mt-20">
+                <div>
+                    <h2 class="lg:text-5xl text-3xl font-bold uppercase"><span class="text-[#FABE4C]">Be the
+                            Penguins</span>
+                        <p class="mt-2"><span class="text-[#363958]">of Winter</span></p>
+                    </h2>
+                    <p class="lg:mt-5 w-[80%] lg:w-[70%] text-sm">Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.</p>
+                    <button class="bg-emerald-800 py-2 px-5 rounded mt-5 text-white font-bold">
+                        <i class="fa-solid fa-cart-plus"></i>
+                        BUY NOW</button>
+                </div>
+                <div>
+                    <img class="lg:w-[300px]" src="./images/model.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="lg:w-[1000px] m-auto lg:mt-20 p-2 lg:p-0">
+        <!-- W0Man Jacket -->
+        <section class="mt-10 lg:mt-0">
+            <h2 class="text-2xl uppercase font-bold mb-4">W0Man Jacket</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-3 lg:gap-0 gap-5 md:grid-cols-3">
+                <!-- card one -->
+                <div class="card bg-base-100 lg:w-[90%] shadow-xl">
+                    <figure class="p-4 rounded-xl bg-[#F1F1F1] lg:m-5 m-2 md:m-2">
+                        <img src="./images/jacket-1.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="mt-2 lg:pl-6 pl-6 md:pl-3">
+                        <h2 class="lg:text-2xl text-2xl md:text-xl font-bold">Woman Leather Jacket </h2>
+                        <p class="text-sm lg:my-1 my-2 md:mt-4">Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry.</p>
+                        <div class="flex md:gap-7 items-center gap-14 lg:gap-14 my-3">
+                            <p class="text-[#FABE4C] text-3xl  pt-4 md:pt-3 font-bold">$234</p>
+                            <button
+                                class="bg-emerald-800 py-2 px-5 lg:py-2 lg:px-5 md:py-1 md:px-2 rounded mt-5 text-white font-bold">
+                                <i class="fa-solid fa-cart-plus"></i>
+                                BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- card Two -->
+                <div class="card bg-base-100 lg:w-[90%] shadow-xl">
+                    <figure class="p-4 rounded-xl bg-[#F1F1F1] lg:m-5 m-2 md:m-2">
+                        <img src="./images/jacket-2.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="mt-2 lg:pl-6 pl-6 md:pl-3">
+                        <h2 class="lg:text-2xl text-2xl md:text-xl font-bold">Ladies Jacket </h2>
+                        <p class="text-sm lg:my-1 my-2 md:mt-4">Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry.</p>
+                        <div class="flex md:gap-7 items-center gap-14 lg:gap-14 my-3">
+                            <p class="text-[#FABE4C] text-3xl  pt-4 md:pt-3 font-bold">$234</p>
+                            <button
+                                class="bg-emerald-800 py-2 px-5 lg:py-2 lg:px-5 md:py-1 md:px-2 rounded mt-5 text-white font-bold">
+                                <i class="fa-solid fa-cart-plus"></i>
+                                BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- card Three -->
+                <div class="card bg-base-100 lg:w-[90%] shadow-xl">
+                    <figure class="p-4 rounded-xl bg-[#F1F1F1] lg:m-5 m-2 md:m-2">
+                        <img src="./images/jacket-3.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="mt-2 lg:pl-6 pl-6 md:pl-3">
+                        <h2 class="lg:text-2xl text-2xl md:text-xl font-bold">Woman Leather Jacket </h2>
+                        <p class="text-sm lg:my-1 my-2 md:mt-4">Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry.</p>
+                        <div class="flex md:gap-7 items-center gap-14 lg:gap-14 my-3">
+                            <p class="text-[#FABE4C] text-3xl  pt-4 md:pt-3 font-bold">$234</p>
+                            <button
+                                class="bg-emerald-800 py-2 px-5 lg:py-2 lg:px-5 md:py-1 md:px-2 rounded mt-5 text-white font-bold">
+                                <i class="fa-solid fa-cart-plus"></i>
+                                BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- card section two man jacket -->
+            <div class="mt-10">
+                <h2 class="text-2xl uppercase font-bold my-10">Man Jacket</h2>
+                <div class="grid grid-cols-1 lg:grid-cols-3 lg:gap-0 gap-5 md:grid-cols-3">
+                    <!-- card one -->
+                    <div class="card bg-base-100 lg:w-[90%] shadow-xl">
+                        <figure class="p-4 rounded-xl bg-[#F1F1F1] lg:m-5 m-2 md:m-2">
+                            <img src="./images/jacket-4.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="mt-2 lg:pl-6 pl-6 md:pl-3">
+                            <h2 class="lg:text-2xl text-2xl md:text-xl font-semibold">Snowboard Jacket Mens</h2>
+                            <p class="text-sm lg:my-1 my-2 md:mt-4">Lorem Ipsum is simply dummy text of the
+                                printing and typesetting industry.</p>
+                            <div class="flex md:gap-7 items-center gap-14 lg:gap-14 my-3">
+                                <p class="text-[#FABE4C] text-3xl  pt-4 md:pt-3 font-bold">$234</p>
+                                <button
+                                    class="bg-emerald-800 py-2 px-5 lg:py-2 lg:px-5 md:py-1 md:px-2 rounded mt-5 text-white font-bold">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                    BUY NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card Two -->
+                    <div class="card bg-base-100 lg:w-[90%] shadow-xl">
+                        <figure class="p-4 rounded-xl bg-[#F1F1F1] lg:m-5 m-2 md:m-2">
+                            <img src="./images/jacket-5.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="mt-2 lg:pl-6 pl-6 md:pl-3">
+                            <h2 class="lg:text-2xl text-2xl md:text-xl font-semibold">Man Leather Jackets</h2>
+                            <p class="text-sm lg:my-1 my-2 md:mt-4">Lorem Ipsum is simply dummy text of the
+                                printing and typesetting industry.</p>
+                            <div class="flex md:gap-7 items-center gap-14 lg:gap-14 my-3">
+                                <p class="text-[#FABE4C] text-3xl  pt-4 md:pt-3 font-bold">$234</p>
+                                <button
+                                    class="bg-emerald-800 py-2 px-5 lg:py-2 lg:px-5 md:py-1 md:px-2 rounded mt-5 text-white font-bold">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                    BUY NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card Three -->
+                    <div class="card bg-base-100 lg:w-[90%] shadow-xl">
+                        <figure class="p-4 rounded-xl bg-[#F1F1F1] lg:m-5 m-2 md:m-2">
+                            <img src="./images/jacket-6.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="mt-2 lg:pl-6 pl-6 md:pl-3">
+                            <h2 class="lg:text-2xl text-2xl md:text-xl font-semibold">Man Casual Jackets</h2>
+                            <p class="text-sm lg:my-1 my-2 md:mt-4">Lorem Ipsum is simply dummy text of the
+                                printing and typesetting industry.</p>
+                            <div class="flex md:gap-7 items-center gap-14 lg:gap-14 my-3">
+                                <p class="text-[#FABE4C] text-3xl  pt-4 md:pt-3 font-bold">$234</p>
+                                <button
+                                    class="bg-emerald-800 py-2 px-5 lg:py-2 lg:px-5 md:py-1 md:px-2 rounded mt-5 text-white font-bold">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                    BUY NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- find the project start here -->
+        <section class="my-24">
+            <div class="flex flex-col-reverse md:flex-row items-center gap-4 lg:gap-24">
+                <div>
+                    <div class="bg-white shadow-lg lg:w-[380px] mt-4 rounded-xl p-3 flex flex-col md:flex-row lg:text-start text-center gap-4 items-center">
+                        <div>
+                            <img class="w-14" src="./icons/question.png" alt="">
+                        </div>
+                        <div>
+                            <h2 class="text-xl font-semibold">Find the Perfect Fit</h2>
+                            <p>They are here to help you. That's quite
+                                literally what we pay them for.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white shadow-lg lg:w-[380px] mt-4 rounded-xl p-3 flex flex-col md:flex-row lg:text-start text-center gap-4 items-center">
+                        <div>
+                            <img class="w-14" src="./icons/question.png" alt="">
+                        </div>
+                        <div>
+                            <h2 class="text-xl font-semibold">Free Exchanges</h2>
+                            <p>They are here to help you. That's quite
+                                literally what we pay them for.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white shadow-lg lg:w-[380px] mt-4 rounded-xl p-3 flex flex-col md:flex-row lg:text-start text-center gap-4 items-center">
+                        <div>
+                            <img class="w-14" src="./icons/question.png" alt="">
+                        </div>
+                        <div>
+                            <h2 class="text-xl font-semibold">Contact Our Seller</h2>
+                            <p>They are here to help you. That's quite
+                                literally what we pay them for.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img class="md:w-[650px]" src="./images/shopping.png" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
